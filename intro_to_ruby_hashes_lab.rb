@@ -46,11 +46,11 @@ def update_counting_hash(hash, key)
   
    update_counting_hash = Hash.new()
    
-   if update_counting_hash[:key]
-     update_counting_hash[:key] += 1
+   if update_counting_hash[key]
+     update_counting_hash[key] += 1
      p update_counting_hash
    else 
-     update_counting_hash[:key] = 1
+     update_counting_hash[key] = 1
      p update_counting_hash
    end 
    
