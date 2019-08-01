@@ -53,7 +53,7 @@ def update_counting_hash(hash, key)
     update_counting_hash[key] += 1
   else 
     update_counting_hash[key] = 1
-    update_counting_hash
+    p update_counting_hash
   end 
  
 end
