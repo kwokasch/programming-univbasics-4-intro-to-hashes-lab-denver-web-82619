@@ -49,8 +49,8 @@ def update_counting_hash(hash, key)
   
   update_counting_hash = Hash.new()
   
-  if update_counting_hash[key]
-    update_counting_hash[key] += 1
+  if hash[key]
+    [key] += 1
   else 
     update_counting_hash[key] = 1
     p update_counting_hash
