@@ -47,6 +47,16 @@ def update_counting_hash(hash, key)
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
   
+  update_counting_hash = Hash.new()
+  
+  if update_counting_hash[key]
+    update_counting_hash[key] += 1
+    puts update_counting_hash[key]
+  else 
+    update_counting_hash[key] = 1
+    puts update_counting_hash[key]
+  end 
+
   
  
 end
